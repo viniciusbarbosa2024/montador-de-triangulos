@@ -26,7 +26,20 @@ function generalFunction() {
         const cosineAngleB = (sideBC**2+sideAB**2 - sideCA**2) /(2*sideBC*sideAB) 
 
         const cosineAngleC = (sideBC**2+sideCA**2 - sideAB**2) /(2*sideBC*sideCA) 
+
+        const angleAInRadians = Math.acos(cosineAngleA)
+
+        const angleBInRadians = Math.acos(cosineAngleB)
+
+        const angleCInRadians = Math.acos(cosineAngleC)
+
+        const angleA = 180*angleAInRadians/(Math.PI)
+
+        const angleB = 180*angleBInRadians/(Math.PI)
+
+        const angleC = 180*angleCInRadians/(Math.PI)
         
+        alert(angleB)
         
     } else {
         alert('Não é possível formar um triângulo com estas medidas')

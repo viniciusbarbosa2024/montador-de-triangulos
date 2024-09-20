@@ -42,15 +42,18 @@ main {
 }
 
 #triangleArea #triangleContainer .side {
-    border: 2px solid black;
+    border-top: 2px solid black;
 }
 
 #triangleArea #triangleContainer #side1 {
     width: 250px;
 
+    display: flex;
+    justify-content: space-between;
+
     position: absolute;
     left: 60px;
-    bottom: 20%;
+    bottom: calc(20% - 18px);
 }
 
 #triangleArea #triangleContainer #side2 {
@@ -67,12 +70,19 @@ main {
 #triangleArea #triangleContainer #side3 {
     width: 144.33px;
 
+    display: flex;
+    justify-content: end;
+
     position: absolute;
     left: calc(60px + 250px);
     bottom: 20%;
 
     transform: rotate(-150deg);
     transform-origin: left;
+}
+
+#triangleArea #triangleContainer #side3 span {
+    transform: rotate(150deg);
 }
 
 #triangleArea #angles {

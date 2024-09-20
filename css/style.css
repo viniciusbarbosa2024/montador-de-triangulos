@@ -33,13 +33,49 @@ main {
 
 }
 
-#triangleContainer {
+#triangleArea #triangleContainer {
     flex-basis: 80%;
     
     background-color: rgb(241, 241, 241);
+
+    position: relative;
 }
 
-#angles {
+#triangleArea #triangleContainer .side {
+    border: 2px solid black;
+}
+
+#triangleArea #triangleContainer #side1 {
+    width: 250px;
+
+    position: absolute;
+    left: 60px;
+    bottom: 20%;
+}
+
+#triangleArea #triangleContainer #side2 {
+    width: 144.33px;
+
+    position: absolute;
+    left: 60px;
+    bottom: 20%;
+
+    transform: rotate(-30deg);
+    transform-origin: left;
+}
+
+#triangleArea #triangleContainer #side3 {
+    width: 144.33px;
+
+    position: absolute;
+    left: calc(60px + 250px);
+    bottom: 20%;
+
+    transform: rotate(-150deg);
+    transform-origin: left;
+}
+
+#triangleArea #angles {
     flex-basis: 20%;
 
     padding: 10px;
